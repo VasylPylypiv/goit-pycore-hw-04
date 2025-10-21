@@ -11,7 +11,7 @@ def total_salary(path):
             for line in file:
                 try:
                     name, salary = line.strip().split(',')
-                    salary = int(salary)
+                    salary = float(salary)
                     total += salary
                     count += 1
                 except ValueError:
